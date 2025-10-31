@@ -30,6 +30,12 @@
       </tbody>
     </table>
   </div>
+  <!-- Totales por marca -->
+  <div class="mt-3">
+    <p class="mb-1" *ngFor="let item of nMarcas | keyvalue: compareByKey">
+      <strong>Total {{ item.key }}:</strong> {{ item.value }}
+    </p>
+  </div>
 
   <!-- Pie de página -->
   <footer class="text-center text-muted mt-5">
