@@ -1,3 +1,37 @@
-<p>
-  listar-vehiculo works!
-</p>
+<!-- vehiculo-list.component.html -->
+<div class="page">
+  <header class="brand">
+    <h1 class="logo">TuSegundazo.com</h1>
+  </header>
+
+  <section class="vehiculos-section">
+    <div class="table-wrap" role="region" aria-labelledby="vehiculosTitle" tabindex="0">
+      <h2 id="vehiculosTitle" class="sr-only">Listado de vehículos</h2>
+
+      <table class="vehiculos-table">
+        <thead>
+          <tr>
+            <th scope="col" class="col-id">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Línea</th>
+            <th scope="col">Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let v of vehiculos; let i = index">
+            <td class="col-id">{{ i + 1 }}</td>
+            <td>{{ v.marca }}</td>
+            <td>{{ v.linea }}</td>
+            <td>{{ v.modelo }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="contact">
+    Contact us: +57 3102105253 -
+    <a href="mailto:info@tusegundazo.com">info&#64;tusegundazo.com</a> -
+    <a href="https://x.com/tusegundazo" target="_blank" rel="noopener">&#64;tusegundazo</a>
+  </footer>
+</div>
