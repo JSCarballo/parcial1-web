@@ -1,5 +1,5 @@
 {
-  "name": "mynewapp",
+  "name": "parcial-1",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:mynewapp": "node dist/mynewapp/server/server.mjs"
+    "serve:ssr:parcial-1": "node dist/parcial-1/server/server.mjs"
   },
   "private": true,
   "dependencies": {
